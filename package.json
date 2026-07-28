@@ -1,0 +1,27 @@
+{
+  "name": "prismamastery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/create.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "dotenv": "^17.4.2",
+    "prisma": "^7.9.1",
+    "tsx": "^4.23.1",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "pg": "^8.22.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
