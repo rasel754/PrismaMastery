@@ -30,7 +30,12 @@ const findFirst = await prisma.post.findFirst({
 // get single data use find unique
 const findUnique = await prisma.post.findUnique({
     where:{
-        id:2
+        id:10
+    },
+    select:{
+        title:true,
+        content:true,
+        author:true
     }
 })
 

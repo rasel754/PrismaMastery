@@ -22,16 +22,36 @@ const main = async () => {
     })
     // console.log(singleUpdate)
 
+
+
     // udpate many 
-    const updateMany = await prisma.post.updateMany({
+    // const updateMany = await prisma.post.updateMany({
+    //     where:{
+    //         author:"John Doe"
+    //     },
+    //     data:{
+    //         content:"updated content"
+    //     }
+    // })
+    // console.log(updateMany)
+
+
+
+    const upsertData = await prisma.post.upsert({
         where:{
-            author:"John Doe"
+            id:10
         },
-        data:{
-            content:"updated content"
+        update:{
+            title:"title six",
+          
+        },
+        create:{
+            title:"title seven",
+            content:"content seven",
+            author:"author seven"
         }
     })
-    console.log(updateMany)
+    console.log(upsertData)
 
 
 };
