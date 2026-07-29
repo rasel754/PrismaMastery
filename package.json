@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/pagination-sorting.ts"
+    "dev": "tsx watch src/create.ts"
   },
   "keywords": [],
   "author": "",
